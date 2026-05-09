@@ -25,21 +25,11 @@ textarea {
 
 :root {
   --background-col: #F7F7F7;
-  --dot-col: #AAAAAA;
-  --select-col: #EEE;
   --mark-col: #FFF2A8;
   --outline-col: #FF851B;
 
-  --btn-primary-txt-col: #FFF;
-  --btn-primary-col: #000E24;
-  --btn-secondary-txt-col: #616263;
-  --btn-secondary-col: #EEEEEE;
-
   --text-col: #111111;
   --secondary-txt-col: #BDBDBD;
-  --link-col: #111111;
-  --input-col: #FFFFFF;
-  --card-col: #FFFFFF;
   --border-col: #DDDDDD;
   
   --font-weight-default: 400;
@@ -47,15 +37,17 @@ textarea {
   --font-large: 20px;
   --font-default: 15px;
   --font-small: 14px;
-  --border-rad-default: 8px;
-  --border-rad-sm: 6px;
-  --border-rad-lg: 12px;
 }
 
 /* Typography Elements
 -------------------------------------------- */
 
-h1, h2 {
+h1 {
+  font-size: 6rem;
+  letter-spacing: 0.03em;
+}
+
+h2 {
   letter-spacing: 0.02em;
 }
 
@@ -81,6 +73,7 @@ p {
 
 small {
   font-size: var(--font-small);
+  color: #b0b0b0;
 }
 
 a {
@@ -96,14 +89,13 @@ hr {
 }
 
 body {
-  background-color: var(--background-col);
+  background-color: #fffcf5;
   font-family: 'Inter', sans-serif;
   font-size: var(--font-default);
   font-weight: var(--font-weight-default);
   letter-spacing: -0.01em;
   line-height: 1.5;
 }
-
 
 html, body {
   height: 100%;
@@ -113,6 +105,23 @@ html, body {
 .centre {
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 12rem;
+}
+
+.centre h1 {
+  background: linear-gradient(to right, #3D9970, #3D9970, #001f3f, #85144b, #FF851B, #FF851B);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  user-select: none;
+}
+
+/* Small screen sizes */
+@media (max-width:600px) {
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 0.02em;
+  }
 }
