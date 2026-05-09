@@ -1,0 +1,118 @@
+/* styles.css */
+
+/* Reset
+-------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+fieldset,
+input,
+legend,
+select,
+textarea {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+}
+
+/* Variables
+-------------------------------------------- */
+
+:root {
+  --background-col: #F7F7F7;
+  --dot-col: #AAAAAA;
+  --select-col: #EEE;
+  --mark-col: #FFF2A8;
+  --outline-col: #FF851B;
+
+  --btn-primary-txt-col: #FFF;
+  --btn-primary-col: #000E24;
+  --btn-secondary-txt-col: #616263;
+  --btn-secondary-col: #EEEEEE;
+
+  --text-col: #111111;
+  --secondary-txt-col: #BDBDBD;
+  --link-col: #111111;
+  --input-col: #FFFFFF;
+  --card-col: #FFFFFF;
+  --border-col: #DDDDDD;
+  
+  --font-weight-default: 400;
+  --font-weight-bold: 600;
+  --font-large: 20px;
+  --font-default: 15px;
+  --font-small: 14px;
+  --border-rad-default: 8px;
+  --border-rad-sm: 6px;
+  --border-rad-lg: 12px;
+}
+
+/* Typography Elements
+-------------------------------------------- */
+
+h1, h2 {
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  letter-spacing: 0.01em;
+  margin: 0.5em 0;
+  font-size: 16px;
+  font-weight: var(--font-weight-bold);
+}
+
+p {
+  margin: 1em 0;
+  font-weight: var(--font-default);
+}
+
+* {
+  outline-color: var(--outline-col);
+}
+
+*::selection {
+  background: var(--mark-col);
+}
+
+small {
+  font-size: var(--font-small);
+}
+
+a {
+  color: var(--link-col);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+}
+
+hr {
+  margin: 1em 0.5em;
+  border: none;
+  border-top: 1px solid var(--border-col);
+}
+
+body {
+  background-color: var(--background-col);
+  font-family: 'Inter', sans-serif;
+  font-size: var(--font-default);
+  font-weight: var(--font-weight-default);
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.centre {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
